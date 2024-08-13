@@ -1,0 +1,60 @@
+body{
+    height: 1000px;
+    background-image: url("images/travel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1500px;
+    
+}
+.text{
+    background-image: url(images/text.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+   
+    text-align: center;
+    font-size: 80px;
+}
+nav{
+  
+    height :80px;
+    background-position: center;
+    padding:10px 0;
+   
+}
+label.logo{
+    color:white;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: bold;
+    padding:  0  100px;
+    padding: 10px;
+   
+   
+  
+    
+    
+}
+nav ul{
+    float: right;
+    margin: -5px;
+}
+nav ul li{
+    display: inline-block;
+    padding:30px;
+    font-size: large;
+    line-height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.text iframe{
+    height: 800px;
+    width: 1500px;
+}

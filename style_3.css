@@ -1,0 +1,157 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: black;
+
+}
+nav{
+  
+    height :80px;
+    background-position: center;
+    padding:10px 0;
+   
+}
+label.logo{
+    color:white;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: bold;
+    padding:  0  100px;
+   
+   
+  
+    
+    
+}
+nav ul{
+    float: right;
+    margin: -5px;
+}
+nav ul li{
+    display: inline-block;
+    padding:20px;
+    font-size: large;
+    line-height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: black;
+    transition: .5s;
+}
+.wrapper{
+    max-width: 1300px;
+    margin-inline:auto;
+
+}
+img{
+    width: 100%;
+}
+.wrapper{
+    margin-top: 200px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    
+}
+.image{
+    flex: 1;
+    aspect-ratio: 1/ 1.5;
+   
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-box-reflect:below 4px linear-gradient(transparent, rgba(0,0,0,0.15));
+    pointer-events: auto;
+}
+.image img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/ 1.5;
+    border-radius: 4px;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+.gallery :hover > :not(:hover){
+    transform:perspective(400px) rotateY(30deg) scale(0.8);
+    margin-inline: -1.5 rem;
+}
+.image:hover ~ .image{
+    transform:perspective(400px) rotateY(-30deg) scale(0.8);
+}
+
+.shyam{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    margin-top:  600px;
+
+
+}
+.left{
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin:0 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+.left:hover{
+    transform: scale(1.1);
+}
+.shyam :hover > :not(:hover){
+    transform:perspective(400px) rotateY(30deg) scale(0.8);
+    margin-inline: -1.5 rem;
+}
+.left:hover ~ .image{
+    transform:perspective(400px) rotateY(-30deg) scale(0.8);
+}
+.shyam h1{
+    color: aliceblue;
+
+}
+.shyam h3{
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.shyam button{
+    margin-left: 200px;
+    margin-top: 50px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-radius: 20px;
+    text-decoration: black;
+    font-size: 20px;
+    color:rgb(216, 245, 2);
+    background-color:rgb(229, 0, 241);
+    font-family: bold;
+    transition: 0.5s;
+}
+

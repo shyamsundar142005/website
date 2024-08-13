@@ -1,0 +1,22 @@
+
+    
+    body{
+        display: grid;
+        height: 100%;
+        place-items: center;
+        background-color: black;
+        color: white;
+        
+    
+    }
+    .text{
+        margin-top: 100px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .text h7{
+        font-size: 20px;
+        margin-top: 500px;
+        margin-left: 40px;
+
+    }

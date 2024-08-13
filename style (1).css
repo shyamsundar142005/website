@@ -1,0 +1,149 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('images/1870821.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+    }
+
+    nav{
+  
+    height :80px;
+    background-position: center;
+    padding:10px 0;
+}
+label.logo{
+    color:white;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: bold;
+    padding:  0  100px;
+  
+    
+    
+}
+nav ul{
+    float: right;
+    margin: -5px;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    padding:30px;
+    font-size: large;
+    line-height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+   
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: black;
+    transition: .5s;
+}
+.content{
+    margin-top: 14%;
+    color:rgb(255, 255, 255);
+    max-width: 620px;
+    padding-left: 100px;
+}
+.content h1{
+    font-size:70px;
+    font-weight: 600;
+    line-height: 85px;
+    
+}
+.content p{
+    color:beige;
+    font: bold;
+}
+.content form{
+    display:flex;
+    align-items: center;
+    background:#fff;
+    border-radius:5px;
+    padding:10px;
+    margin-top: 30px;
+    
+}
+.content form input{
+    border:0;
+    outline:0;
+    width: 100%;
+    font-size:16px;
+    padding-left: 10px;
+    transition: 5s;
+    cursor: pointer;
+}
+.content form .btn{
+    font-size: 15px;
+    padding:10px 30px;
+    background-color: #f5168d;
+    border:0;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: .5s;
+    display: inline-flex;
+    
+}
+.popup {
+    display: none;
+    position: fixed;
+   top: 50%;
+    margin-left: 1000px;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+   
+    z-index: 1;
+}
+
+.popup-content {
+    position: relative;
+   height: 460px;
+   width: 450px;
+   text-align: center;
+   z-index: 2;
+   color: white;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+.ask{
+    margin-right: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+
